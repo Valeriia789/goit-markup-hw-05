@@ -976,6 +976,8 @@ footer {
   line-height: 26px;
   /* identical to box height, or 162% */
   letter-spacing: 0.03em;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-button:hover,
