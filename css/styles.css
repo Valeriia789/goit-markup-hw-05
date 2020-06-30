@@ -349,8 +349,8 @@ margin-right: 50px;
   width: 270px;
 }
 
-.feachers-icon {
-  display: block;
+.feachers-icon-container {
+  display: flex;
   align-items: center;
   justify-content: center;
 
@@ -360,27 +360,34 @@ margin-right: 50px;
   margin-top: 0px;
   margin-bottom: 30px;
 
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-
   border-radius: 4px;
   background-position: center;
   background-color: var(--section-background-color);
 }
 
-.feachers-svg {
+.feachers-icon {
   width: 70px;
   height: 70px;
 
-  display: block;
+  display: flex;
   align-items: center;
   justify-content: center;
   background-color: transparent;
+
+  /*
+  transform: translate3d(0px, 0px, 0px) 5000ms cubic-bezier(.52,.23,.18,.84);
+  transition: transform;
+  */
 }
 
 /*
+.feachers-icon:hover {
+  transform: translate3d(20px, -20px, 50px);
+}
+*/
+
+/*
+-----Альтернативный способ вставить картинку перед текстом через псевдокласс:----
 .feachers-item::before {
   display: block;
 
@@ -397,19 +404,15 @@ margin-right: 50px;
   background-position: center;
   background-color: var(--section-background-color);
 }
-
 .icon-antenna::before {
   background-image: url(../images/1antenna.svg);
 }
-
 .icon-clock::before {
   background-image: url(../images/2clock.svg);
 }
-
 .icon-diagram::before {
   background-image: url(../images/3diagram.svg);
 }
-
 .icon-astronaut::before {
   background-image: url(../images/4astronaut.svg);
 }
