@@ -155,6 +155,26 @@ margin-right: 50px;
 
   background-color: var(--accent-color);
   border-radius: 2px;
+
+  animation-name: current-underline;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+
+  /* можно всё в одной строке указать:
+  animation: current-underline 3s ease-in-out 0s infinite normal forwards; */
+}
+
+@keyframes current-underline {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 .address-container {
